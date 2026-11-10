@@ -68,6 +68,9 @@ public class Automaton
     {
         Arrays.fill(state, 0);
         // Seed the automaton with a single 'on' cell.
+        //Question 5
         state[numberOfCells / 2] = 1;
+        state[numberOfCells / 2 - 1] = 1;
+        state[numberOfCells / 2 + 1] = 1;
     }
 }
